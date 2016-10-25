@@ -1,0 +1,967 @@
+/**
+ * @package    AcySMS for Joomla!
+ * @version    1.7.7
+ * @author     acyba.com
+ * @copyright  (C) 2009-2015 ACYBA S.A.R.L. All rights reserved.
+ * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+span.onload
+{
+	background-image:url(../images/spinner.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	padding:2px 20px;
+}
+
+span.loading{
+	padding:2px 20px;
+}
+
+div.onload{
+	background-image:url(../images/spinner.gif);
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	float : right;
+	margin-left : 3px;
+}
+
+.searchtext
+{
+	background-color: rgb(255, 255, 102);
+	color : black;
+	font-weight:bold;
+}
+
+th.titletoggle{
+	width:65px;
+	white-space: nowrap;
+}
+
+th.titledate{
+	width:150px;
+	white-space: nowrap;
+}
+
+th.titlesender{
+	width:150px;
+	white-space: nowrap;
+}
+
+th.titlelink, th.titleorder{
+	width:100px;
+}
+
+th.titlebox, th.titleid, th.titlenum{
+	width:30px;
+	white-space: nowrap;
+}
+
+th.titlecolor{
+	width:12px;
+}
+
+td.key{
+	white-space: nowrap;
+}
+
+div.roundsubscrib{
+	width:12px;
+	height:12px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 10px;
+	float : right;
+	margin-left : 3px;
+	margin-top : 1px;
+	margin-bottom : 1px;
+}
+
+div.rounddisp{
+	border : 1px solid;
+	border-color : gray;
+}
+
+div.roundsub{
+	border : 2px solid;
+	border-color : green;
+}
+div.roundunsub{
+	border : 2px solid;
+	border-color : red;
+}
+div.roundconf{
+	border : 2px solid;
+	border-color : orange;
+}
+
+div.acysms_footer{
+	padding-top : 20px;
+	font-size : 10px;
+	text-align:center;
+}
+
+
+
+
+div.acysms_list{
+	border : 1px solid #cccccc;
+	margin : 10px;
+	padding : 10px;
+}
+
+div.acysms_list:hover{
+	background-color : #FFFFDD;
+}
+
+.list_description{
+	padding : 10px 10px;
+}
+
+.list_name{
+	font-size : 14pt;
+}
+
+.acysms_forward{
+	text-align:center;
+	width:100%;
+	margin-bottom:30px;
+}
+
+div#iframedoc, div#iframetemplate, div#iframetag{
+	height:300px;
+	display:none;
+	border:2px solid #cccccc;
+}
+#iframedoc iframe, #iframetemplate iframe, #iframetag iframe{
+	border: 0 none;
+	}
+
+div.newsletter_body{
+	color : black;
+}
+div.newsletter_body table, div.newsletter_body th,div.newsletter_body td, div.newsletter_body tr, div.newsletter_body img{
+	border: 0 none;
+	margin:0;
+}
+.newsletter_body table{
+	color:black;
+}
+
+.hideonline{
+	display:none;
+}
+
+img.captchaimagecomponent{
+	border:1px solid #dddddd;
+}
+
+
+
+
+
+.btn-small .icon-acysms { background-image:url(../images/icons/14_acysms.png);vertical-align:middle;}
+.btn-small .icon-unblock_contact {background-image:url(../images/icons/14_color_unblock.png);vertical-align:middle;}
+.btn-small .icon-block_contact {background-image:url(../images/icons/14_color_block.png);vertical-align:middle;}
+.btn-small .icon-smspreview  {background-image:url(../images/icons/14_color_preview.png);vertical-align:middle;}
+.btn-small .icon-stats  {background-image:url(../images/icons/14_color_chart.png);vertical-align:middle;}
+.btn-small .icon-answer  {background-image:url(../images/icons/14_answer.png);vertical-align:middle;}
+.btn-small .icon-import  {background-image:url(../images/icons/14_import.png);vertical-align:middle;}
+.btn-small .icon-smsexport  {background-image:url(../images/icons/14_smsexport.png);vertical-align:middle;}
+.btn-small .icon-process { background-image:url(../images/icons/14_color_process.png); vertical-align:middle; }
+.btn-small .icon-conversation { background-image:url(../images/icons/14_conversation.png); vertical-align:middle; }
+
+.icon-32-save {background-image:url(../images/icons/32_save.png);}
+.icon-32-share {background-image:url(../images/icons/32_share.png);}
+.icon-32-process {background-image:url(../images/icons/32_process.png);}
+.icon-32-acysms {background-image:url(../images/icons/32_acysms.png);}
+.icon-32-block_contact {background-image:url(../images/icons/32_block_contact.png);}
+.icon-32-smscategories {background-image:url(../images/icons/32_categories.png);}
+.icon-32-smsconfig {background-image:url(../images/icons/32_config.png);}
+.icon-32-dashboard {background-image:url(../images/icons/32_dashboard.png);}
+.icon-32-help {background-image:url(../images/icons/32_help.png);}
+.icon-32-message {background-image:url(../images/icons/32_message.png);}
+.icon-32-smspreview {background-image:url(../images/icons/32_smspreview.png);}
+.icon-32-messagebox {background-image:url(../images/icons/32_messagebox.png);}
+.icon-32-queue {background-image:url(../images/icons/32_queue.png);}
+.icon-32-receiver {background-image:url(../images/icons/32_receiver.png);}
+.icon-32-sender {background-image:url(../images/icons/32_sender.png);}
+.icon-32-stat {background-image:url(../images/icons/32_stat.png);}
+.icon-32-unblock_contact {background-image:url(../images/icons/32_unblock_contact.png);}
+.icon-32-update {background-image:url(../images/icons/32_update.png);}
+.icon-32-answer {background-image:url(../images/icons/32_answer.png);}
+.icon-32-import {background-image:url(../images/icons/32_import.png);}
+.icon-32-smsexport {background-image:url(../images/icons/32_smsexport.png);}
+.icon-32-answertrigger {background-image:url(../images/icons/32_answer_trigger.png);}
+.icon-32-fields {background-image:url(../images/icons/32_fields.png);}
+.icon-32-group {background-image:url(../images/icons/32_group.png);}
+.icon-32-acysmsprint {background-image:url(../images/icons/32_print.png);}
+.icon-32-conversation {background-image:url(../images/icons/32_conversation.png);}
+.icon-32-customers {background-image:url(../images/icons/32_customers.png);}
+
+.icon-48-acysms {background-image:url(../images/icons/48_acysms.png);}
+.icon-48-answer {background-image:url(../images/icons/48_answer.png);}
+.icon-48-block_contact {background-image:url(../images/icons/48_block_contact.png);}
+.icon-48-smscategories {background-image:url(../images/icons/48_categories.png);}
+.icon-48-smsconfig {background-image:url(../images/icons/48_config.png);}
+.icon-48-dashboard {background-image:url(../images/icons/48_dashboard.png);}
+.icon-48-help {background-image:url(../images/icons/48_help.png);}
+.icon-48-message {background-image:url(../images/icons/48_message.png);}
+.icon-48-smspreview {background-image:url(../images/icons/48_smspreview.png);}
+.icon-48-messagebox {background-image:url(../images/icons/48_messagebox.png);}
+.icon-48-queue {background-image:url(../images/icons/48_queue.png);}
+.icon-48-receiver {background-image:url(../images/icons/48_receiver.png);}
+.icon-48-sender {background-image:url(../images/icons/48_sender.png);}
+.icon-48-stat {background-image:url(../images/icons/48_stat.png);}
+.icon-48-unblock_contact {background-image:url(../images/icons/48_unblock_contact.png);}
+.icon-48-update {background-image:url(../images/icons/48_update.png);}
+.icon-48-smsusers {background-image:url(../images/icons/48_users.png);}
+.icon-48-import {background-image:url(../images/icons/48_import.png);}
+.icon-48-smsexport {background-image:url(../images/icons/48_smsexport.png);}
+.icon-48-answertrigger {background-image:url(../images/icons/48_answer_trigger.png);}
+.icon-48-fields {background-image:url(../images/icons/48_fields.png);}
+.icon-48-group {background-image:url(../images/icons/48_group.png);}
+.icon-48-conversation {background-image:url(../images/icons/48_conversation.png);}
+.icon-48-customers {background-image:url(../images/icons/48_customers.png);}
+
+
+
+
+
+
+a .icon16{
+	border: 1px solid transparent;
+}
+
+a:hover .icon16{
+	border: 1px solid #669933;
+}
+
+.acyschedule{
+	display:inline-block;
+	height:16px;
+	width:16px;
+	background-image:url(../images/schedule.png)
+}
+
+div.acysms_messages{
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	border-top-style:solid;
+	border-top-width:2px;
+	font-weight:bold;
+	margin:5px 10px;
+	padding:0;
+}
+
+.acysms_messages li{
+	list-style-type : none;
+	background:none;
+	padding-left:0px;
+}
+
+.acysms_messages ul{
+	padding:3px 0 3px 25px;
+	margin:10px;
+}
+
+div.acysms_warning{
+	background-color:#EFE7B8;
+	border-bottom-color:#F0DC7E;
+	border-top-color:#F0DC7E;
+	color:#CC0000;
+}
+
+div.acysms_success{
+	background-color:#CCFFBB;
+	border-bottom-color:#00AA00;
+	border-top-color:#00AA00;
+	color:#00AA00;
+}
+
+div.acysms_info{
+	background-color:#C3D2E5;
+	border-bottom-color:#84A7DB;
+	border-top-color:#84A7DB;
+	color:#0055BB;
+}
+
+div.acysms_error{
+	background-color:#E6C0C0;
+	border-bottom-color:#DE7A7B;
+	border-top-color:#DE7A7B;
+	color:#CC0000;
+}
+
+div.acychart, table.acychart{
+	border:1px solid #dddddd;
+	padding:2px;
+}
+
+#acysms_content input,#acysms_content textarea,#acysms_content select,
+#acysms_content fieldset input,#acysms_content fieldset textarea,#acysms_content fieldset select,
+#acysms_content fieldset img,#acysms_content fieldset button{
+	float:none;
+}
+
+#acysms_content label{
+	float:none;
+	display:inline;
+}
+#acysms_content fieldset{
+	border:1px solid #CCCCCC;
+	background-color:#FFFFFF;
+}
+#acysms_content table.admintable td.key ,#acysms_content table.admintable td.paramlist_key {
+	background-color:#F6F6F6;
+	border-bottom:1px solid #E9E9E9;
+	border-right:1px solid #E9E9E9;
+	color:#666666;
+	font-weight:bold;
+	text-align:right;
+	width:140px;
+	padding:5px;
+}
+
+#acysms_content input, #acysms_content select, #acysms_content textarea{
+	padding:3px;
+	border-radius:3px;
+}
+#acysms_content input[type=checkbox]{
+	padding:0px;
+}
+#acysms_content input[type=radio]{
+	margin-left:10px;
+	padding:1px;
+}
+
+#acysms_content div.header{
+	background-repeat:no-repeat;
+	color:#0B55C4;
+	font-size:22px;
+	font-weight:bold;
+	line-height:48px;
+	margin-left:10px;
+	padding-left:55px;
+}
+
+#acysms_content dd{
+	width:auto;
+}
+
+#acysms_content div.current select {
+	margin-bottom:0px;
+	}
+
+#acysms_content fieldset legend{
+		position:static;
+		float:none;
+		top : 0px !important;
+}
+
+#acysms_content div.current{
+	background-color:#F9F9F9;
+}
+
+#acyarchivelisting td, #acyarchivelisting tr, #acymodifyform td, #acymodifyform tr{
+	border:0 none;
+}
+
+#acyuserinfo td{
+	padding: 4px;
+}
+
+#acyarchivelisting img{
+	border:0 none;
+}
+
+
+#acysms_content td.acysmstdcheckbox{
+	width:35px;
+	background-image:url(../images/checkbox.png);
+	background-repeat:no-repeat;
+	background-position:14px 3px;
+}
+
+#acysms_content tr:hover td.acysmstdcheckbox{
+	background-position:-56px 3px;
+}
+
+#acysms_content tr.selectedrow td.acysmstdcheckbox{
+	background-position:-126px 3px;
+}
+
+
+
+
+#sms_global{
+	width:296px;
+	margin:auto;}
+
+#acysms_content .sms_top{
+	position:relative;
+	width:296px;
+	height:160px;
+	background:url(../images/phone_top.png) no-repeat}
+
+#acysms_content .sms_count{
+	color: #FFFFFF;
+		left: 55px;
+		position: absolute;
+		top: 128px;
+		display: inline;
+		width:74px;
+		height:26px;
+		text-align:center;
+		padding-top: 5px;}
+
+.sms_info{ color: #FFFFFF;
+		left: 142px;
+		position: absolute;
+		top: 128px;
+		display: inline;
+		width:103px;
+		height:26px;
+		text-align:center;
+		padding-top: 5px;}
+
+#sms_bottom{
+	width:296px;
+	height:103px;
+	background:url(../images/phone_bottom.png) no-repeat}
+
+#sms_body{
+	padding:5px 5px 0px 5px;
+	width:296px;
+	min-height:318px;
+	background:url(../images/phone_body.png) repeat-y}
+
+#sms_body #message_body {
+	width:235px !important;
+	min-height:318px;
+	margin-left:25px;}
+
+#sms_global textarea{
+	border:none !important;}
+
+#sms_global textarea:focus{
+	background-color:#f8fafc}
+
+.acysms_message_params, .acysms_delay, #acysms_type{
+	margin-top: 15px;
+}
+
+#acysms_type, #acysms_filter_component{
+	margin-bottom: 10px;
+}
+
+#acysms_content div.acysmsheader{
+	background-repeat:no-repeat;
+	color:#0B55C4;
+	font-size:22px;
+	font-weight:bold;
+	line-height:48px;
+	margin-left:10px;
+	padding-left:55px;
+	width:auto;
+	height:auto;
+}
+
+.acysmsheaderarea{
+	margin-bottom:10px;
+}
+
+
+
+#acysms_content fieldset.radio {
+	border: 0;
+	margin-bottom: 5px;
+	background-color:transparent;
+}
+
+#acysms_content fieldset.adminform {
+	padding: 5px 17px 17px;
+}
+
+.view-frontdata #acysms_content fieldset.adminform {
+	padding: 0;
+}
+
+#acysms_content fieldset.adminform legend {
+	margin: 0px;
+	padding: 0px 3px;
+	border: 0px solid;
+	width: auto;
+}
+
+body.com_acysms #acysms_content table td.order input {
+		margin-bottom: 0;
+		width: 20px;
+}
+
+.acysmsheaderarea{
+	margin-bottom:10px;
+}
+
+
+
+
+table.acltable thead{
+	background-color:#5471B5;
+	color:white;
+}
+
+table.acltable{
+	border-collapse: collapse;
+	background-color:white;
+}
+table.acltable td
+{
+	padding:4px;
+		border: #cccccc 1px solid;
+}
+
+table.acltable th{
+	padding: 5px 15px;
+	border: #cccccc 1px solid;
+	}
+
+table.acltable td.checkfield{
+	text-align:center;
+}
+
+table.acltable tr.aclline:hover{
+	background-color:#CDE6E3;
+}
+
+
+#acysmsnavbar div.navbar-inner{
+	background-color: #FAFAFA;
+	background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
+	background-repeat: repeat-x;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+
+#acysms_content tfoot td{
+	text-align:center;
+}
+
+body.com_acysms div.modal-body iframe{
+	border: 0 none;
+}
+
+#acysms_content button.button-margin {
+	margin: 3px 2px 2px 2px;
+}
+
+#acysms_content select, #acysms_content input {
+	margin: 2px !important;
+}
+
+.titleorder a:first-child {
+	float:left;
+}
+.titleorder .saveorder:first-child{
+	float:right ;
+}
+
+.selectedUsers {
+	background-color: #F5F5F5;
+	line-height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	display: inline-block;
+	border: solid 1px #C5C4C4;
+	border-radius: 4px;
+	margin-right: 3px;
+	margin-top:2px;
+}
+
+.removeUser {
+	width: 20px;
+	display: inline-block;
+	background-image: url(../images/closecross.png);
+	background-size: cover;
+	height: 20px;
+	background-position: 0;
+	cursor: pointer;
+	float: right;
+}
+
+#userSelection {
+	width:240px;
+}
+
+#acysms_divSelectReceiver {
+	position: absolute;
+	width: 240px;
+	margin-right: 5px;
+	margin-left: 5px;
+	max-height: 219px;
+	box-shadow: 0 2px 4px 1px #B3B3B3;
+	border: solid 1px #858585;
+	z-index:1;
+	background: white;
+}
+
+#acysms_receiversTable .row_user {
+	width: 100%;
+	display: block;
+	line-height: 20px;
+	border-top: solid 1px #EBEBEB;
+}
+
+#acysms_receiversTable .row_user:first-child {
+	border:0;
+}
+
+#acysms_receiversTable .row_user:hover {
+	background-color: #EBEBEB;
+}
+
+#acysms_receiversTable table {
+	width:100%;
+	background-color:white;
+}
+
+#acysms_receiversTable .row_user td {
+	padding:0;
+	padding-left:30px;
+}
+
+
+#sms_global #conversationTitle{
+	background-color:#ececec;
+	padding:8px 5px;
+	text-align:center;
+	border-bottom:1px solid #dddddd;
+}
+
+#sms_global #conversationTitle .conversationUsersName{
+	background: url("../images/conversation_user.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+	color: #555;
+	display: block;
+	font-weight: bold;
+	padding-left: 18px;
+	text-align: left;
+	margin:0 4px 0 10px
+}
+
+
+#sms_global .conversation{
+		margin: 0;
+		min-height: 212px;
+		max-height: 312px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		padding: 0 0px 0 20px;
+		width:249px;
+}
+
+#sms_global .newday{
+	color:#969696;
+	font-size:11px ;
+	border-bottom:1px solid #ddd;
+	text-align:center;
+	padding-bottom:5px;
+	margin:15px 0 10px;
+	width:100%;
+	float:left;
+}
+
+#sms_global .conversationItem_answer{
+	display:block;
+	clear:both;
+	padding:0px 12px;
+}
+
+#sms_global .conversationItem_meassage{
+	display:block;
+	clear:both;
+	padding:0px 12px;
+}
+
+#sms_global .acysms_message .acysms_text {
+	background-color:#8295af;
+	border-radius: 4px;
+	clear: both;
+	color: #fff;
+	float: right;
+	font-weight: bold;
+	margin-top: 0px;
+	padding: 5px 10px;
+	position:relative;
+	right:-1px;
+	max-width:180px
+}
+
+#sms_global .acysms_message {
+	background:url(../images/conversation_blue.png) right center no-repeat;
+	padding:0px 10px;
+	display:inline-block;
+	clear:both; width:100%;
+	margin:0px 12px 5px 0px;
+	float: right;
+}
+
+#sms_global .message_info{
+	display:inline-block;
+	clear:both;
+	float:right;
+	margin:0px 15px 10px 12px;
+}
+
+#sms_global .message_info .senderName, #sms_global .message_info .message_date{
+	float:left;
+	margin:0px 5px 0px 0px;
+	font-size:11px;
+	clear:none;
+	text-align:right;
+}
+
+#sms_global .message_info .senderName{
+	color:#444;
+}
+
+#sms_global .message_info .message_date{
+	color:#969696;
+}
+
+#sms_global .acysms_answer .acysms_text{
+	background-color:#bebc35;
+	border-radius: 4px;
+	clear: both;
+	color: #fff;
+	float: left;
+	font-weight: bold;
+	margin-top: 0px;
+	padding: 5px 10px;
+	max-width:180px
+}
+
+#sms_global .acysms_answer {
+	background:url(../images/conversation_green.png) 2px center no-repeat;
+	padding:0px 10px;
+	display:inline-block;
+	clear:both;
+	width:100%;
+	margin:0px 0px 5px 0px;
+	float:left;
+}
+
+#sms_global .answer_info{
+	display:inline-block;
+	clear:both;
+	float:left;
+	margin-left:12px;
+	margin-bottom:10px;
+}
+
+#sms_global .answer_info .senderName, #sms_global .answer_info .answer_date{
+	float:left;
+	margin:0px 5px 0px 0px;
+	font-size:11px;
+	clear:none;
+	text-align:left;
+}
+
+#sms_global .answer_info .senderName{
+	color:#444;
+}
+
+#sms_global .answer_info .answer_date{
+	color:#969696;
+}
+
+
+#sms_global #answerArea{
+	background-color: #ececec ;
+	border-top: 1px solid #dddddd;
+	clear: both ;
+	display: inline-block ;
+	margin: 0px 23px 0 20px ;
+	padding: 8px 8px 8px 10px ;
+	width: 230px;
+}
+
+#answerArea  #message_body{
+	height: 45px ;
+	margin: 0 ;
+	padding: 8px 8px 35px;
+	width: 92% !important;
+}
+
+#sms_global textarea:focus{
+	background-color:#fff;
+}
+
+#sms_body #message_body{
+	min-height:0px;
+}
+
+#sms_global #sendOneShotSMSButton{
+	position:relative;
+	left: 8px;
+	top: -36px;
+	height:0px;
+	display:block;
+}
+#sms_global #sendOneShotSMSButton .btn{
+	border-radius:2px;
+	border:1px solid #dbdbdb;
+	text-transform:uppercase;
+	font-size:8px;
+	padding:5px;
+	font-weight:bold;
+	color:#939393;
+	background: #ffffff; 
+	background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 47%, #f0f0f0 66%, #f0f0f0 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f5f5f5), color-stop(66%,#f0f0f0), color-stop(100%,#f0f0f0)); 
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f5f5f5 47%,#f0f0f0 66%,#f0f0f07 100%); 
+	background: -o-linear-gradient(top, #ffffff 0%,#f5f5f5 47%,#f0f0f0 66%,#f0f0f0 100%); 
+	background: -ms-linear-gradient(top, #ffffff 0%,#f5f5f5 47%,#f0f0f0 66%,#f0f0f0 100%); 
+	background: linear-gradient(to bottom, #ffffff 0%,#f5f5f5 47%,#f0f0f0 66%,#f0f0f0 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); 
+	-moz-box-shadow: inset 1px 1px 5px 0px #ffffff;
+	-webkit-box-shadow: inset 1px 1px 5px 0px #ffffff;
+	-o-box-shadow: inset 1px 1px 5px 0px #ffffff;
+	box-shadow: inset 1px 1px 5px 0px #ffffff;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#ffffff, Direction=134, Strength=5);
+	text-shadow:1px 1px 1px #fff;
+}
+
+#sms_global #sendOneShotSMSButton .btn:hover{
+	color:#747474;
+	background: #e7e7e7; 
+	background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 47%, #e6e6e6 66%, #e7e7e7 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f5f5f5), color-stop(66%,#e6e6e6), color-stop(100%,#e7e7e7)); 
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f5f5f5 47%,#e6e6e6 66%,#e7e7e7 100%); 
+	background: -o-linear-gradient(top, #ffffff 0%,#f5f5f5 47%,#e6e6e6 66%,#e7e7e7 100%); 
+	background: -ms-linear-gradient(top, #ffffff 0%,#f5f5f5 47%,#e6e6e6 66%,#e7e7e7 100%); 
+	background: linear-gradient(to bottom, #ffffff 0%,#f5f5f5 47%,#e6e6e6 66%,#e7e7e7 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); 
+}
+
+#sms_global #sendOneShotSMSButton .btn .buttonText{
+	background:url(../images/conversation_send.png) no-repeat left;
+	padding-left:15px;
+}
+
+.sms_mms_upload {
+	position: relative;
+	left: 25px;
+	background: url(../images/paperclip.png) no-repeat;
+	background-size: 25px;
+	background-position: 205px 7px;
+	width: 250px;
+	cursor:pointer;
+	min-height:40px;
+}
+
+.sms_mms_upload input[type=file] {
+	opacity: 0;
+	width: 35px;
+	margin: 0!important;
+}
+
+.sms_upload_text {
+	width:150px;
+}
+
+.sms_remove_media {
+	background: url(../images/closecross.png) no-repeat;
+	display: inline-block;
+	position: relative;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, 0.86);
+	box-shadow: 0 0 2px #2b2b2b;
+	margin-right: 3px;
+}
+
+.sms_mms_upload img {
+	box-shadow: 0px 0px 8px #2b2b2b;
+}
+
+.sms_remove_media:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#answerArea .sms_mms_upload {
+	position: inherit;
+}
+
+.answer_attachment {
+	background: url(../images/answer-attachment.png) no-repeat;
+	background-size: 18px;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+
+.conversation_attachment {
+	background: url(../images/answer-attachment.png) no-repeat;
+	background-size: 45px;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+}
+
+.message_conversation_attachment {
+	float: right;
+	margin-right: 10px;
+}
+
+.answer_conversation_attachment {
+	float: left;
+	margin-left: 10px;
+}
+
+.conversation{
+		width:80%;
+		margin-left:10%;
+}
+
+ .acysms_message{
+	background-color:#58ACFA;
+	clear: both;
+	float: right;
+	margin-top: 15px;
+	max-width: 200px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.acysms_answer{
+	background-color:#E9E89B;
+	clear: both;
+	float: left;
+	margin-top: 15px;
+	max-width: 200px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.answer_date{
+	clear: both;
+	float: left;
+	margin-top: 5px;
+}
+
+.message_date{
+	clear: both;
+	float: right;
+	margin-top: 5px;
+}
+
+.newday{
+	width:100%;
+	text-align:center;
+	border-bottom: 1px solid #58ACFA;
+	float:left;
+}

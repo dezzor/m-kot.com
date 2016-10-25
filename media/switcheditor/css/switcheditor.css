@@ -1,0 +1,12 @@
+/**
+ * @package    Switch Editor
+ * @subpackage mod_switcheditor
+ * @copyright  Copyright (C) 2012 Anything Digital. All rights reserved.
+ * @copyright  Copyright (C) 2008 Netdream - Como,Italy. All rights reserved.
+ * @license    GNU/GPLv2
+ */
+
+.adEditorFormBox {display:inline;line-height:25px;}
+.adEditorFormBox form {display:inline;margin:0}
+.adEditor {opacity:1;background-color:#FFFFDD}
+.adEditorBusy {opacity:0.2;background-color:#FF0000}

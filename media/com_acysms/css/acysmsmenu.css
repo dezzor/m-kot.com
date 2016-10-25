@@ -1,0 +1,278 @@
+/**
+ * @package    AcySMS for Joomla!
+ * @version    1.7.7
+ * @author     acyba.com
+ * @copyright  (C) 2009-2015 ACYBA S.A.R.L. All rights reserved.
+ * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+.smsicon-16_acysms {background-image:url(../images/icons/16_acysms.png); background-position:11px;}
+.smsicon-16_receiver {background-image:url(../images/icons/16_receiver.png); background-position:11px;}
+.smsicon-16_message {background-image:url(../images/icons/16_message.png); background-position:11px;}
+.smsicon-16_categories {background-image:url(../images/icons/16_categories.png); background-position:11px;}
+.smsicon-16_queue {background-image:url(../images/icons/16_queue.png); background-position:11px;}
+.smsicon-16_config {background-image:url(../images/icons/16_config.png); background-position:11px;}
+.smsicon-16_sender {background-image:url(../images/icons/16_sender.png); background-position:11px;}
+.smsicon-16_stats {background-image:url(../images/icons/16_stat.png); background-position:11px;}
+.smsicon-16_answer {background-image:url(../images/icons/16_answer.png); background-position:11px;}
+.smsicon-16_import {background-image:url(../images/icons/16_import.png); background-position:11px;}
+.smsicon-16_export {background-image:url(../images/icons/16_export.png); background-position:11px;}
+.smsicon-16_answertrigger {background-image:url(../images/icons/16_answer_trigger.png); background-position:11px;}
+.smsicon-16_fields {background-image:url(../images/icons/16_fields.png); background-position:11px;}
+.smsicon-16_group {background-image:url(../images/icons/16_group.png);}
+.smsicon-16_customers	{background-image:url(../images/icons/16_customers.png);}
+
+#acysmsmenutop{
+	font-size:11px;
+	line-height:20px;
+	font-weight:normal;
+	height:20px;
+}
+
+#acysmsmenutop ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#acysmsmenutop > ul > li {
+	float:left;
+	margin:0px 1px;
+}
+
+#acysmsmenutop li a {
+	display:block;
+	line-height:20px;
+	padding:0 3px 0 32px;
+	text-decoration:none;
+	background-repeat:no-repeat;
+}
+#acysmsmenutop li:hover ul a {
+	color:#069;
+}
+
+#acysmsmenutop li ul {
+	border:1px solid #ccc;
+	background:#f4f4f4;
+	display:none;
+	height:auto;
+	position:absolute;
+	z-index:200;
+	padding:3px;
+	padding-top:4px;
+}
+
+#acysmsmenutop li:hover ul {
+	display:block;
+}
+#acysmsmenutop li li {
+	display:block;
+	float:none;
+}
+
+#acysmsmenutop li .acysubmenu{
+	*background-color:#fff;
+}
+
+#acysmsmenutop li ul a {
+	display:block;
+	font-style:normal;
+	font-weight:normal;
+	text-align:left;
+	background-position:5px 50%;
+	border-bottom:1px dotted #ccc;
+	padding-left:25px;
+	padding-right:15px;
+	min-width:75px;
+	margin-right:2px;
+	margin-left:2px;
+	background-color:#fff;
+}
+
+#acysmsmenutop li ul a:hover {
+	background-color:#8da3b0;
+	color:#ffffff;
+	-webkit-border-radius:5px;
+		 -moz-border-radius:5px;
+			border-radius:5px;
+}
+
+#acysmsmenutop li:hover a{
+	color:#fff;
+}
+
+#acysmsmenutop ul li.acymainmenu ul{
+-webkit-border-top-right-radius:5px;
+	 -moz-border-top-right-radius:5px;
+				border-top-right-radius:5px;
+-webkit-border-top-left-radius:0px;
+	 -moz-border-top-left-radius:0px;
+				border-top-left-radius:0px;
+-webkit-border-bottom-right-radius:5px;
+	 -moz-border-bottom-right-radius:5px;
+				border-bottom-right-radius:5px;
+-webkit-border-bottom-left-radius:5px;
+	 -moz-border-bottom-left-radius:5px;
+				border-bottom-left-radius:5px;}
+
+
+
+#acysmsmenutop .parentmenu {
+	padding-right:15px;
+	background:url(../images/arrow_acysmsmenu.png) no-repeat;
+	background-position:right 8px;
+}
+#acysmsmenutop .parentmenu:hover{
+background-color:#8da3b0;
+-webkit-border-top-left-radius:5px;
+	 -moz-border-top-left-radius:5px;
+				border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+	 -moz-border-top-right-radius:5px;
+				border-top-right-radius:5px;
+background-position:right -5px;
+}
+
+
+
+#acysmsmenutop #acysmsselectedmenu{
+		background-color:#8da3b0;
+	background-position:right -5px;
+		-webkit-border-radius:5px;
+	 -moz-border-radius:5px;
+				border-radius:5px;
+}
+
+#acysmsmenutop #acysmsselectedmenu:hover{
+	background-color:#8da3b0;
+	background-position:right -5px;
+	*background-position:right -4px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}
+
+#acysmsselectedmenu a{
+	color:#fff;
+}
+
+
+
+#acysmsmenutop .singlemenu a{
+	padding-right:10px;
+}
+
+#acysmsmenutop .singlemenu:hover{
+	background-color:#8da3b0;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+
+#acysmsmenutop #acysmsselectedmenu.singlemenu:hover{
+	background-color:#8da3b0;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+
+#acysmsmenutop_j3 i {
+	width:16px;
+	height:16px;
+	display:inline-block;
+	line-height:16px;
+	background-position:0px 0px;
+	background-repeat:none;
+}
+#acysmsmenutop_j3 > li.sel {
+	background-color:#BFE3F5;
+}
+#acysmsmenutop_j3 .dropdown-menu li.sel {
+	background-color:#6FB7DB;
+	color:#ffffff;
+}
+body.com_acysms .navbar {
+	padding-bottom: 15px;
+}
+
+
+
+#acysmsmenutop_j3 > li > a{
+		padding:3px 5px;
+		margin:3px 5px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;}
+
+#acysmsmenutop_j3 > li.sel{
+		background-color:transparent;}
+
+
+
+#acysmsmenutop_j3 .dropdown-menu a{
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		clear: both;
+		color: #333333;
+		display: block;
+		font-weight: normal;
+		line-height: 18px;
+		margin-left: 5px;
+		margin-right: 5px;
+		padding: 3px 14px;
+		white-space: nowrap;}
+
+
+
+#acysmsmenutop_j3 li.dropdown.open > .dropdown-toggle,
+#acysmsmenutop_j3 li.dropdown.active > .dropdown-toggle,
+#acysmsmenutop_j3 li.dropdown.open.active > .dropdown-toggle {
+		background-color:transparent;
+		background-image: -moz-linear-gradient(top,#f5f5f5,#dddddd);
+		background-image: -webkit-gradient(linear,0 0,0 100%,from(#f5f5f5),to(#dddddd));
+		background-image: -webkit-linear-gradient(top,#f5f5f5,#dddddd);
+		background-image: -o-linear-gradient(top,#f5f5f5,#dddddd);
+		background-image: linear-gradient(to bottom,#f5f5f5,#dddddd);
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffdddddd', GradientType=0);
+		color: #555;
+}
+
+
+
+#acysmsmenutop_j3 > li.dropdown .sel, #acysmsmenutop_j3 li.dropdown.open > .dropdown-toggle.sel {
+		background-color: #184a7d;
+		background-image: -moz-linear-gradient(top,#2165a4,#194176);
+		background-image: -webkit-gradient(linear,0 0,0 100%,from(#2165a4),to(#194176));
+		background-image: -webkit-linear-gradient(top,#2165a4,#194176);
+		background-image: -o-linear-gradient(top,#2165a4,#194176);
+		background-image: linear-gradient(to bottom,#2165a4,#194176);
+		background-repeat: repeat-x;
+		color:#fff;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2165a4', endColorstr='#ff194176', GradientType=0);}
+
+#acysmsmenutop_j3 > li.sel a{
+		color:#fff;
+		text-shadow: 0 1px 0 #112543;}
+
+#acysmsmenutop_j3 > li.sel a.acysubmenulink{
+		color:#666;
+		text-shadow:none;}
+#acysmsmenutop_j3 > li.sel a.acysubmenulink:hover{
+		color:#fff;}
+
+#acysmsmenutop_j3 .dropdown-menu a:hover{ color:#fff}
+
+
+
+#acysmsmenutop_j3 li.dropdown > .sel .caret{
+		border-bottom-color: #D9D9D9;
+		border-top-color: #f2f2f2;
+		margin-left:5px;}

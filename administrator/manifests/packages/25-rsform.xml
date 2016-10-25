@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+<name>Русский язык для RSForm!Pro</name>
+<packagename>RSForm!Pro ru-RU</packagename>
+<version>46</version>
+<creationDate>14 марта 2013</creationDate>
+<packager>aleksius.com</packager>
+<packagerEmail>email@aleksius.com</packagerEmail>
+<packagerurl>http://aleksius.com</packagerurl>
+<tag>ru-RU</tag>
+<author>Хорошевский Алексей</author>
+<authorEmail>email@aleksius.com</authorEmail>
+<authorUrl>http://aleksius.com</authorUrl>
+<description><![CDATA[
+  <div align="center">
+    <table border="0" width="90%">
+	    <tr>
+		    <td width="100%" colspan="2">
+			<div align="center"> <a href="http://aleksius.com/" target="_blank"><img border="0" src="http://aleksius.com/templates/aleksius_com.png" alt="aleksius.com" /></a>
+		      <div align="center"> 
+				<h3> RSForm!Pro 1.4.0 Rev 46:</h3>
+		      </div>
+		      <hr />
+		    </td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Язык:</b></u></td>
+		    <td width="80%">Русский</td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Часть сайта:</b></u></td>
+		    <td width="80%">Административная и фронтальная (обновление перевода)</td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Автор:</b></u></td>
+		    <td width="80%">Хорошевский Алексей</td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Сайт:</b></u></td>
+		    <td width="80%"><a href="http://aleksius.com" target="_blank">http://aleksius.com</a></td>
+	    </tr>
+	    <tr>
+		    <td width="18%"><u><b>Перевод для версии:</b></u></td>
+		    <td width="80%">1.4.0 Rev 46</td>
+	    </tr>
+	    <tr>
+		    <td width="100%" colspan="2">
+		      <p align="center"><b><font color="#008000">Проверьте сайт <a href="http://aleksius.com/joomla/rusifikatory/rusifikator-rsform-pro" target="_blank">Aleksius.com</a>, скачайте новую версию перевода данного расширения.</font></b></td>
+	    </tr>
+    </table>
+  </div>]]></description>
+<files>
+    <file type="language" client="administrator" id="ru-RU">admin</file>
+	<file type="language" client="site" id="ru-RU">site</file>
+</files>
+</extension>

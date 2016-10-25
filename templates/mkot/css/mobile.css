@@ -1,0 +1,316 @@
+@media (max-width: 768px) {
+  #logo{
+    text-align:center;
+  }
+
+  .metro{
+    width: 290px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .phone {
+    text-align: center;
+  }
+
+  address {
+    width: 290px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  section {
+    background: url(../img/section_bg.png);
+    padding-bottom: 15px;
+  }
+
+  .moduletable {
+    padding-bottom: 0px;
+  }
+
+  .moduletable h2, .moduletable>h3{
+    font-size:36px;
+  }
+
+  .moduletable h2:before, .moduletable>h3:before{
+    content: url('');
+    display: inline-block;
+    width: 90%;
+    height: 35px;
+    background: url(/templates/mkot/img/block-title__pattern--left.svg) no-repeat center;
+    position: relative;
+    top: 10px;
+    clear: both;
+  }
+
+  .moduletable h2:after, .moduletable>h3:after{
+    content: url('');
+    display: inline-block;
+    width: 90%;
+    height: 35px;
+    background: url(/templates/mkot/img/block-title__pattern--left.svg) no-repeat center;
+    position: relative;
+    top: 10px;
+    clear: both;
+  }
+
+  .master-main h3 {
+    display:block;
+    left:0px;
+  }
+
+  .master-main {
+    margin-bottom:0px;
+  }
+
+  .row:before, .row:after, .container:before, .container:after {
+    content: " ";
+    display: inherit;
+  }
+
+  .cards{
+    display:none;
+  }
+
+  .promotion {
+    padding-top: 185px;
+    margin-top: 40px;
+  }
+
+  .carousel{
+    display:none;
+  }
+
+  .slick-slider{
+    margin-top:20px;
+  }
+
+  .slick-dots{
+    display:none !important;
+  }
+
+  .slick-arrow{
+    display:none !important;
+  }
+
+  .slick-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .service-main span {
+    color: #fff;
+    left:0px;
+    position: relative;
+    top: -33px;
+  }
+
+  .nav li a {
+    color: #DD4D10 !important;
+  }
+
+  .menu > li:hover > ul{
+    display: none !important;
+  }
+
+  .service-cat span {
+    position: relative;
+    text-align: center;
+    display: block;
+    top: 290px;
+  }
+
+  .master-small-img {
+    overflow: hidden;
+  }
+
+  .masters-short-descr {
+    padding-top: 0px;
+  }
+
+  .master-small-img li {
+    margin-bottom:13px;
+  }
+
+  .masters-full-descr{
+    padding-top: 0px;
+    clear:both;
+  }
+
+  .masters-short-descr>p {
+    padding:0px;
+    display:block;
+    width:35%;
+    float:left;
+  }
+
+  .jcomments-links {
+    margin-top: 0px;
+    clear: none;
+    text-align: left;
+    display: block;
+    width: 65%;
+    float: left;
+  }
+
+  .readmore-link{
+    display:block;
+  }
+
+  .page-header {
+    padding-bottom: 9px;
+    margin:0px;
+    border-bottom: rgba(0, 0, 0, 0);
+  }
+
+  section h1{
+    padding-top:0px;
+    margin-top: 0px;
+    font-size: 35px;
+  }
+
+  .masters .masters-short-descr{
+    padding-top:0px !important;
+  }
+
+  .apartament>.col-md-1>img{
+    width: 47px;
+    float: left;
+    margin: 0px 10px 10px 0px;
+  }
+
+  .apartament>.col-md-11{
+    text-align: justify;
+  }
+
+  section h1:before, .moduletable > h3:before {
+    content: url('');
+    display: inline-block;
+    width: 125px;
+    height: 35px;
+    background: url(../img/block-title__pattern--left.svg) no-repeat center;
+    position: relative;
+    top: 10px;
+    width:100%;
+  }
+
+  .moduletable h2:after, .moduletable>h3:after, section h1:after, .moduletable > h3:after {
+    content: url('');
+    display: inline-block;
+    height: 35px;
+    background: url(/templates/mkot/img/block-title__pattern--left.svg) no-repeat center;
+    position: relative;
+    top: 10px;
+    clear: both;
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .item-page img{
+    width:100%;
+    height:auto;
+  }
+
+  .service-main{
+    margin-top:-30px !important;
+  }
+
+  .appartaments {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .nav-tabs li{
+    display: block;
+    width: 100%;
+  }
+
+  .tab-pane ul{
+    margin:0px 0px 0px 20px;
+    padding:0px;
+  }
+
+  .tab-pane ul li{
+    margin-bottom:10px;
+    text-align:justify;
+  }
+
+  .componentheading{
+    color:#DD4D10;
+    font: 30px "Cuprum", Helvetica, Arial, sans-serif;
+  }
+
+  .rsform-input-box{
+    width:100%;
+    display:block;
+  }
+
+  .contact-address address{
+    text-align:center;
+    background: none;
+    padding-left:0px;
+  }
+
+  .controls input, .controls textarea{
+    width:100%;
+  }
+
+  .navbar-header{
+    display:block;
+  }
+
+  .contact-page__phone{
+    text-align:center;
+  }
+
+  .container>h3{
+    text-align:center;
+  }
+
+  .contact-address dd {
+    margin-left:0px !important;
+  }
+
+  .benefit .col-md-3 img{
+    margin:0 auto;
+  }
+
+  .master-main>a>div{
+    background-repeat:no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+  }
+
+  .service-main>a>div{
+    background-repeat:no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+  }
+
+  .appartaments{
+    display:inline-block;
+  }
+
+  #subscription {
+    position: relative;
+    z-index: 100;
+    background: rgba(60, 0, 0, 0.6);
+    top: -27px;
+    left: 0%;
+    border-radius: 0 0 1em 1em;
+    width: 100%;
+    padding:15px;
+  }
+
+  #subscription .btn-success {
+    margin: 0 auto;
+  }
+
+  .navbar {
+    margin-top: 20px;
+    background: url(../img/alfa-30.png);
+    margin-bottom: 0px;
+    min-height: 40px;
+    z-index: 10000;
+  }
+}

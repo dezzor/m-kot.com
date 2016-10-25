@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_CONTENT_CATEGORIES_VIEW_SERVICES_TITLE" option="COM_CONTENT_CATEGORIES_VIEW_SERVICES_OPTION">
+        <help
+            key = "JHELP_MENUS_MENU_ITEM_ARTICLE_CATEGORIES"
+        />
+        <message>
+            <![CDATA[COM_CONTENT_CATEGORIES_VIEW_SERVICES_DESC]]>
+        </message>
+    </layout>
+
+    <!-- Add fields to the request variables for the layout. -->
+    <fields name="request">
+        <fieldset name="request"
+         >
+            <field name="id" type="category"
+                description="JGLOBAL_FIELD_CATEGORIES_CHOOSE_CATEGORY_DESC"
+                extension="com_content"
+                label="JGLOBAL_FIELD_CATEGORIES_CHOOSE_CATEGORY_LABEL"
+                show_root="true"
+                required="true"
+            />
+        </fieldset>
+    </fields>
+</metadata>

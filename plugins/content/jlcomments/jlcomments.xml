@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>PLG_JLCOMMENTS</name>
+	<author>JoomLine</author>
+	<creationDate>2016.08.31</creationDate>
+	<copyright>(C) 2011-2016 by Kunitsyn Vadim(http://www.joomline.ru)</copyright>
+	<license>GNU/GPL: http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>vadim@joomline.ru</authorEmail>
+	<authorUrl>http://joomline.ru</authorUrl>
+	<version>2.7</version>
+	<description>PLG_JLCOMMENTS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="jlcomments">jlcomments.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+	</files>
+	<languages folder="language">
+        <language tag="ru-RU">ru-RU/ru-RU.plg_content_jlcomments.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_content_jlcomments.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_content_jlcomments.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_content_jlcomments.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+		
+			<fieldset label="PLG_JLCOMMENTS_VK_SITTINGS" name="tp1">	
+				<field name="showvkontakte" type="radio" default="0" label="PLG_JLCOMMENTS_TAB_ON_LABEL" description="PLG_JLCOMMENTS_TAB_ON_VK_DESC">
+				  <option value="0">PLG_JLCOMMENTS_NO</option>
+				  <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>
+				<field name="apiId" type="text" label="PLG_JLCOMMENTS_APIID_LABEL" default="api ID"/>
+				<field name="autoAdd" type="radio" default="1" label="PLG_JLCOMMENTS_AUTOADD_LABEL" description="PLG_JLCOMMENTS_AUTOADD_DESC">
+				  <option value="0">PLG_JLCOMMENTS_NO</option>
+				  <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>
+				<field name="attach" type="list" default="*" label="PLG_JLCOMMENTS_ATTACH_LABEL" description="PLG_JLCOMMENTS_ATTACH_DESC">
+				  <option value="*">PLG_JLCOMMENTS_ATTACH_ALL</option>
+				  <option value="false">PLG_JLCOMMENTS_ATTACH_OFF</option>
+				  <option value="graffiti">PLG_JLCOMMENTS_ATTACH_GRAFF</option>
+				  <option value="photo">PLG_JLCOMMENTS_ATTACH_PHOTO</option>
+				  <option value="audio">PLG_JLCOMMENTS_ATTACH_AUDIO</option>
+				  <option value="video">PLG_JLCOMMENTS_ATTACH_VIDEO</option>
+				  <option value="link">PLG_JLCOMMENTS_ATTACH_LINKS</option>
+				</field>
+				<field name="autoPublish" type="radio" default="1" label="PLG_JLCOMMENTS_PUBLISH_LABEL" description="PLG_JLCOMMENTS_PUBLISH_DESC">
+				  <option value="0">PLG_JLCOMMENTS_NO</option>
+				  <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>
+				<field name="norealtime" type="radio" default="0" label="PLG_JLCOMMENTS_REAL_LABEL" description="PLG_JLCOMMENTS_REAL_DESC">
+				  <option value="1">PLG_JLCOMMENTS_NO</option>
+				  <option value="0">PLG_JLCOMMENTS_YES</option>
+				</field>
+				<field name="widthvk" type="text" label="PLG_JLCOMMENTS_WIDTH_LABEL" default="0" description="PLG_JLCOMMENTS_WIDTH_DESC"/>
+			</fieldset>
+			<fieldset name="tp2" label="PLG_JLCOMMENTS_FB_SITTINGS">	
+				<field name="showfacebook" type="radio" default="0" label="PLG_JLCOMMENTS_TAB_ON_LABEL" description="PLG_JLCOMMENTS_TAB_ON_FB_DESC">
+				  <option value="0">PLG_JLCOMMENTS_NO</option>
+				  <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>
+				
+				<field name="fbId" type="text" label="PLG_JLCOMMENTS_IDFB_LABEL" default=""/>
+				<field name="fbadmin" type="text" label="PLG_JLCOMMENTS_MODERATOR_LABEL" description="PLG_JLCOMMENTS_MODERATOR_DESC" default=""/>
+				<field name="fb_lang" type="list" default="ru_RU" label="PLG_JLCOMMENTS_LANG_LABEL" description="PLG_JLCOMMENTS_LANG_DESC">
+				  <option value="ru_RU">Русский</option>
+				  <option value="en_US">English</option>
+				</field>
+				<field name="colorscheme" type="list" default="light" label="PLG_JLCOMMENTS_COLORSCHEME_LABEL" description="PLG_JLCOMMENTS_COLORSCHEME_DESC">
+				  <option value="light">Light</option>
+				  <option value="dark">Dark</option>
+				</field>
+				<field name="orderbyfb" type="radio" default="0" label="PLG_JLCOMMENTS_ORDER_BY_FB_LABEL" description="PLG_JLCOMMENTS_ORDER_BY_FB_DESC">
+				  <option value="social">PLG_JLCOMMENTS_SOCIAL</option>
+				  <option value="reverse_time">PLG_JLCOMMENTS_REVERSE_TIME</option>
+				  <option value="time">PLG_JLCOMMENTS_TIME</option>
+				</field>
+				<field name="widthfb" type="text" label="PLG_JLCOMMENTS_WIDTH_LABEL" default="100%" description="PLG_JLCOMMENTS_WIDTH_DESC"/>
+			</fieldset>
+			<fieldset name="tp3" label="PLG_JLCOMMENTS_G_SITTINGS">
+				<field name="googleplus" type="radio" default="0" label="PLG_JLCOMMENTS_TAB_ON_LABEL" description="PLG_JLCOMMENTS_TAB_ON_G_DESC">
+				  <option value="0">PLG_JLCOMMENTS_NO</option>
+				  <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>
+				<field name="googleid" type="text" label="PLG_JLCOMMENTS_GOOGLEID_LABEL" default=""/>
+				<field name="widthgoogle" type="text" label="PLG_JLCOMMENTS_WIDTH_LABEL" default="500" description="PLG_JLCOMMENTS_WIDTH_DESC"/>
+			</fieldset>
+			<fieldset name="tp4" label="PLG_JLCOMMENTS_ALL_SITTINGS">	
+				<field name="showjcomments" type="radio" default="0" label="PLG_JLCOMMENTS_TAB_ON_JCOMM_LABEL" description="PLG_JLCOMMENTS_TAB_ON_JCOMM_DESC">
+				  <option value="0">PLG_JLCOMMENTS_NO</option>
+				  <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>
+				<field name="comLimit" type="text" label="PLG_JLCOMMENTS_COUNT_LABEL" default="10"/>
+				<field name="orders" type="text" label="PLG_JLCOMMENTS_ORDERS_LABEL" default="1,2,3,4" decription="PLG_JLCOMMENTS_ORDERS_DESC"/>				
+				<field name="categories" type="category" extension='com_content' default="0" multiple="multiple"
+						label="PLG_JLCOMMENTS_CAT_LABEL"
+						description="PLG_JLCOMMENTS_CAT_DESC"/>
+				<field name="typeviewercss" type="radio" default="1" label="PLG_JLCOMMENTS_TYPEVIEWERCSS_LABEL" >
+					 <option value="0">PLG_JLCOMMENTS_NO</option>
+					 <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>		
+				<field name="typeviewerjq" type="radio" default="1" label="PLG_JLCOMMENTS_TYPEVIEWER_LABEL" >
+					 <option value="0">PLG_JLCOMMENTS_NO</option>
+					 <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>
+				<field name="typeviewerbs" type="radio" default="1" label="PLG_JLCOMMENTS_TYPEVIEWERBS_LABEL" >
+					 <option value="0">PLG_JLCOMMENTS_NO</option>
+					 <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>
+				<field name="typeviewernojq" type="radio" default="1" label="PLG_JLCOMMENTS_TYPEVIEWERNOJQ_LABEL" >
+					 <option value="0">PLG_JLCOMMENTS_NO</option>
+					 <option value="1">PLG_JLCOMMENTS_YES</option>
+				</field>
+				<field name="link" type="radio" label="PLG_JLCOMMENTS_LINK_LABEL" description="PLG_JLCOMMENTS_LINK_DESCRIPTION" default="1">
+					<option value="0">PLG_JLCOMMENTS_YES</option>
+					<option value="1">PLG_JLCOMMENTS_NO</option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+	<updateservers><server type="extension" priority="1" name="Joomline">http://joomline.net/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=7&amp;dummy=extension.xml</server></updateservers>
+</extension>

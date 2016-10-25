@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="module" method="upgrade" client="administrator">
+	<name>mod_switcheditor</name>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>2012-10-30</creationDate>
+	<author>Anything Digital</author>
+	<authorEmail>admin@anything-digital.com</authorEmail>
+	<authorUrl>http://anything-digital.com</authorUrl>
+	<copyright>@ant_xml_copyright@</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.1</version>
+	<description>MOD_SWITCHEDITOR_XML_DESCRIPTION</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_switcheditor.sys.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_switcheditor">mod_switcheditor.php</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<media destination="switcheditor" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+</extension>

@@ -1,0 +1,116 @@
+# If the Joomla site is installed within a folder 
+# eg www.example.com/joomla/ then the robots.txt file 
+# MUST be moved to the site root 
+# eg www.example.com/robots.txt
+# AND the joomla folder name MUST be prefixed to all of the
+# paths. 
+# eg the Disallow rule for the /administrator/ folder MUST 
+# be changed to read 
+# Disallow: /joomla/administrator/
+#
+# For more information about the robots.txt standard, see:
+# http://www.robotstxt.org/orig.html
+#
+# For syntax checking, see:
+# http://tool.motoricerca.info/robots-checker.phtml
+
+User-agent: *
+Disallow: /administrator/
+Disallow: /bin/
+Disallow: /cache/
+Disallow: /cli/
+Disallow: /components/
+Disallow: /includes/
+Disallow: /installation/
+Disallow: /language/
+Disallow: /layouts/
+Disallow: /libraries/
+Disallow: /logs/
+Disallow: /media/
+Disallow: /modules/
+Disallow: /plugins/
+Disallow: /templates/
+Disallow: /tmp/
+Disallow: /index.php*
+Disallow: /index2.php*
+Allow: / 
+Allow: /service-list
+Allow: /masters
+Allow: /apartament-list
+Allow: /content/vakansii
+Allow: /forms/kontakty
+Allow: /blogkot
+Allow: /kategoriya-programmy/rasslablyayushchie-programmy
+Allow: /kategoriya-programmy/kompleksnye-spa-programmy
+Allow: /kategoriya-programmy/programmy-dlya-zhenshchin
+Allow: /kategoriya-programmy/massazh-dlya-par
+Allow: /kategoriya-programmy/eksklyuzivnye-programmy
+Allow: /kategoriya-programmy/malchishniki
+Allow: /kategoriya-programmy/devichniki
+Allow: /kategoriya-programmy/dopolnitelnye-vidy-massazha
+Allow: /kategoriya-programmy/dopolnitelnye-uslugi
+Allow: /content/eroticheskiy-massazh-na-kurskoy-kruglosutochno
+Allow: /content/strogo-konfidencialno-dlya-teh-kto-dorozhit-svoey-lichnoy-zhiznyu
+Allow: /content/skolko-dolzhen-stoit-kachestvennyy-eroticheskiy-massazh
+Allow: /content/pochemu-massazh-luchshe-delat-v-salone-ne-doma
+Allow: /content/klassicheskiy-i-eroticheskiy-massazh
+Allow: /apartaments/evropeyskie-apartamenty
+Allow: /apartaments/brazilskiy-cvetnik
+Allow: /apartaments/aziatskoe-bungalo
+Allow: /apartaments/vip-apartamenty
+Allow: /apartaments/vostochnyy-buduar
+Allow: /apartaments/interery-salona
+
+User-agent: Yandex
+
+Allow: / 
+Allow: /service-list
+Allow: /masters
+Allow: /apartament-list
+Allow: /content/vakansii
+Allow: /forms/kontakty
+Allow: /blogkot
+Allow: /kategoriya-programmy/rasslablyayushchie-programmy
+Allow: /kategoriya-programmy/kompleksnye-spa-programmy
+Allow: /kategoriya-programmy/programmy-dlya-zhenshchin
+Allow: /kategoriya-programmy/massazh-dlya-par
+Allow: /kategoriya-programmy/eksklyuzivnye-programmy
+Allow: /kategoriya-programmy/malchishniki
+Allow: /kategoriya-programmy/devichniki
+Allow: /kategoriya-programmy/dopolnitelnye-vidy-massazha
+Allow: /kategoriya-programmy/dopolnitelnye-uslugi
+Allow: /content/eroticheskiy-massazh-na-kurskoy-kruglosutochno
+Allow: /content/strogo-konfidencialno-dlya-teh-kto-dorozhit-svoey-lichnoy-zhiznyu
+Allow: /content/skolko-dolzhen-stoit-kachestvennyy-eroticheskiy-massazh
+Allow: /content/pochemu-massazh-luchshe-delat-v-salone-ne-doma
+Allow: /content/klassicheskiy-i-eroticheskiy-massazh
+Allow: /apartaments/evropeyskie-apartamenty
+Allow: /apartaments/brazilskiy-cvetnik
+Allow: /apartaments/aziatskoe-bungalo
+Allow: /apartaments/vip-apartamenty
+Allow: /apartaments/vostochnyy-buduar
+Allow: /apartaments/interery-salona
+Disallow: /administrator/
+Disallow: /bin/
+Disallow: /cache/
+Disallow: /cli/
+Disallow: /components/
+Disallow: /includes/
+Disallow: /installation/
+Disallow: /language/
+Disallow: /layouts/
+Disallow: /libraries/
+Disallow: /logs/
+Disallow: /media/
+Disallow: /modules/
+Disallow: /plugins/
+Disallow: /templates/
+Disallow: /tmp/
+Disallow: /index.php*
+Disallow: /index2.php*
+Crawl-delay: 2
+Host: m-kot.com
+Sitemap: http://m-kot.com/sitemap.xml
+
+
+
