@@ -19,7 +19,7 @@ JHtml::_('behavior.caption');
     <?$fields = fieldattach::getArrayValue($this->item->id,$category = false);?>
     <?$image = json_decode($item->images, true);?>
     <?if($i==0):?><div class="row"><?endif;?>
-    <div class="col-md-4">
+    <div class="col-md-4 service">
         <a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catid, $item->language)); ?>">
           <img src="<?=$image['image_intro']?>" class="img-responsive" alt="" />
         </a>
@@ -30,8 +30,13 @@ JHtml::_('behavior.caption');
           </a>
         </h2>
         <?foreach($fields as $field):?>
-            <p><?=$field->title?>: <?=$field->value?></p>
+          <?if($field->fieldsid == 3):?>
+          <p><i><?=$field->title?></i>: <span class="strikethrough"><?=$field->value?></span></p>
+          <?else:?>
+          <p><i><?=$field->title?></i>: <span class="white"><?=$field->value?></span></p>
+          <?endif;?>
         <?endforeach;?>
+        <h3><i><?php echo JText::_('SERVICE_CONTENTS'); ?>:</i></h3>
         <?php echo $this->item->introtext; ?>
     </div>
     <?$i++;?>

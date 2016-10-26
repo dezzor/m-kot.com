@@ -111,7 +111,7 @@
       </div>
     </div>
     <div class="footer-slogan">
-      &copy; 2016 &laquo;МАРТОВСКИЙ КОТ&raquo; Все права защищены. Полное или частичное копирование материалов запрещено.
+      <?php echo JText::_('FOOTER_TEXT'); ?>
     </div>
 
     <a href="#top" id="back-top" onclick="return up()"></a>
